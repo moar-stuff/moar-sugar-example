@@ -1,0 +1,20 @@
+{
+  "name": "moar-sugar-example",
+  "version": "1.0.0",
+  "description": "Example of using moar-sugar",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "script/prepare.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moar-stuff/moar-sugar-example.git"
+  },
+  "author": "Mark Farnsworth",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/moar-stuff/moar-sugar-example/issues"
+  },
+  "homepage": "https://github.com/moar-stuff/moar-sugar-example#readme"
+}

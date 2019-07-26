@@ -2,24 +2,18 @@
 
 Stuff to make Java sweet!
 
-Setup
------
+## Setup
 
 The setup for this project has been tested on MacOS 10.14.3 (18D109), OpenJDK 11.0.2, MySQL 8.0.12, Node v11.7.0, and NPM 6.8.0.
 
-## Step 1, Install Moar CLI
+### Initialize
 
 ```bash
-npm install -g moar-cli
-```
-
-## Step 2, Clone and initialize example project
-
-```bash
-cd ~/moar-workspace
-git clone git@github.com:moar-stuff/moar-sugar-example
-cd moar-sugar-example
-moar-init
+mkdir moar-
+cd moar-
+git clone git@github.com:moar-stuff/moar-sugar-example sugar-example
+cd sugar-example
+npm install
 ```
 
 To run all the examples, you need a mysql database.
@@ -33,17 +27,17 @@ GRANT ALL PRIVILEGES ON moar_sugar_example_db.* TO 'moar_example_user'@'localhos
 
 We also need a config file.
 
-```
+```bash
 echo '{
-host: "localhost:3306"
-db: moar_sugar_example_db
-user: moar_example_user
-password: moar_example_password
-}' | moar-json > moar_example_app_config.json
+"host": "localhost:3306",
+"db": "moar_sugar_example_db",
+"user": "moar_example_user",
+"password": "moar_example_password"
+}' > moar_example_app_config.json
 ```
 
 With the database and config file you can run the sample.
 
-```
+```bash
 ./run.sh
 ```

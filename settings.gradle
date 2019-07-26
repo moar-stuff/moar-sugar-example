@@ -1,2 +1,1 @@
-include "moar-sugar"
 include "moar-sugar-app"
